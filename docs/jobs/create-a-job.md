@@ -21,6 +21,7 @@ To create a new job, you need to provide the following details:
 
 - **company**: The unique identifier (ID) of the company to which the job belongs.
 - **title**: The title of the job.
+- **description**: The description of the job.
 - **status**: The status of the job (`IN_PROGRESS` or `FINISHED`).
 - **contract_type**: The type of job contract (e.g., `Full-time`, `Part-time`).
 - **employment_type**: The type of employment (`ONSITE`, `REMOTE`, `HYBRID`).
@@ -48,6 +49,7 @@ mutation CreateJob($input: CreateJobInput!) {
     company
     title
     status
+    description
     contract_type
     employment_type
     tags {
@@ -75,6 +77,7 @@ mutation CreateJob($input: CreateJobInput!) {
     "title": "Software Engineer",
     "status": "IN_PROGRESS",
     "contract_type": "Full-time",
+    "description": "We are looking for a talented software engineer...",
     "employment_type": "REMOTE",
     "tags": [
       {
@@ -106,6 +109,7 @@ mutation CreateJob($input: CreateJobInput!) {
       "status": "IN_PROGRESS",
       "contract_type": "Full-time",
       "employment_type": "REMOTE",
+      "description": "We are looking for a talented software engineer...",
       "tags": [
         {
           "name": "JavaScript",
@@ -137,6 +141,7 @@ mutation CreateJob($input: CreateJobInput!) {
 - **`company`**: Unique identifier for the company associated with the job.
 - **`title`**: Title of the job.
 - **`status`**: Status of the job (`IN_PROGRESS` or `FINISHED`).
+- **`description`**: Description of the job.
 - **`contract_type`**: Type of contract (e.g., `Full-time`, `Part-time`).
 - **`employment_type`**: Type of employment (`ONSITE`, `REMOTE`, `HYBRID`).
 - **`tags`**: Array of job tags.
