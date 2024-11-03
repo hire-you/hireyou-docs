@@ -25,7 +25,7 @@ The **CreateApplication** mutation allows you to create a new application, which
   - **name** (string, required): Name of the stage.
   - **description** (string, required): Description of the stage.
   - **order** (integer, required): Order of the stage in the process.
-  - **assign_roles** (array of IDs, optional): IDs of assigned recruiters/interviewers.
+  - **assignRoles** (array of IDs, optional): IDs of assigned recruiters/interviewers.
   - **assignments** (array of IDs, optional): IDs of assignments or tasks.
   - **feedback** (object, optional): Feedback details for the stage.
     - **aiFeedback** (string, optional): Feedback provided by AI.
@@ -48,7 +48,7 @@ mutation CreateApplication($input: CreateApplicationInput!) {
       name
       description
       order
-      assign_roles
+      assignRoles
       assignments
       feedback {
         aiFeedback
@@ -76,7 +76,7 @@ mutation CreateApplication($input: CreateApplicationInput!) {
         "name": "Initial Screening",
         "description": "First round of screening with HR",
         "order": 1,
-        "assign_roles": ["64a789f4e14d16bc9df98765"],
+        "assignRoles": ["64a789f4e14d16bc9df98765"],
         "assignments": ["64a987f4e14d16bc9df54321"],
         "feedback": {
           "aiFeedback": "Candidate shows strong alignment with company culture.",
@@ -105,7 +105,7 @@ mutation CreateApplication($input: CreateApplicationInput!) {
           "name": "Initial Screening",
           "description": "First round of screening with HR",
           "order": 1,
-          "assign_roles": ["64a789f4e14d16bc9df98765"],
+          "assignRoles": ["64a789f4e14d16bc9df98765"],
           "assignments": ["64a987f4e14d16bc9df54321"],
           "feedback": {
             "aiFeedback": "Candidate shows strong alignment with company culture.",
@@ -132,7 +132,7 @@ mutation CreateApplication($input: CreateApplicationInput!) {
   - **`name`**: Name of the application stage.
   - **`description`**: Description of the application stage.
   - **`order`**: Order of the application stage in the process.
-  - **`assign_roles`**: Array of IDs representing assigned recruiters/interviewers.
+  - **`assignRoles`**: Array of IDs representing assigned recruiters/interviewers.
   - **`assignments`**: Array of IDs representing tasks or assignments.
   - **`feedback`**: Feedback provided at each stage.
     - **`aiFeedback`**: Feedback provided by AI.

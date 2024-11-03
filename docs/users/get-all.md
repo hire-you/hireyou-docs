@@ -30,10 +30,10 @@ query GetAllUsers($page: Int, $limit: Int) {
     _id
     name
     email
-    auth_user_id
+    authUserId
     role
-    created_at
-    updated_at
+    createdAt
+    updatedAt
   }
 }
 ```
@@ -64,19 +64,19 @@ query GetAllUsers($page: Int, $limit: Int) {
           "_id": "64c123f4e14d16bc9df67890",
           "name": "John Doe",
           "email": "john.doe@example.com",
-          "auth_user_id": "auth0|abcd1234",
+          "authUserId": "auth0|abcd1234",
           "role": "CANDIDATE",
-          "created_at": "2024-10-01T10:00:00.000Z",
-          "updated_at": "2024-10-05T15:30:00.000Z"
+          "createdAt": "2024-10-01T10:00:00.000Z",
+          "updatedAt": "2024-10-05T15:30:00.000Z"
         },
         {
           "_id": "64c456f4e14d16bc9df12345",
           "name": "Jane Smith",
           "email": "jane.smith@example.com",
-          "auth_user_id": "auth0|efgh5678",
+          "authUserId": "auth0|efgh5678",
           "role": "RECRUITER",
-          "created_at": "2024-10-03T12:00:00.000Z",
-          "updated_at": "2024-10-07T16:45:00.000Z"
+          "createdAt": "2024-10-03T12:00:00.000Z",
+          "updatedAt": "2024-10-07T16:45:00.000Z"
         }
       ]
     }
@@ -95,10 +95,10 @@ query GetAllUsers($page: Int, $limit: Int) {
   - **`_id`**: Unique identifier for the user.
   - **`name`**: Name of the user.
   - **`email`**: Email address of the user.
-  - **`auth_user_id`**: Authentication ID of the user.
+  - **`authUserId`**: Authentication ID of the user.
   - **`role`**: Role of the user (`CANDIDATE`, `RECRUITER`, or `ADMIN`).
-  - **`created_at`**: Timestamp indicating when the user was created.
-  - **`updated_at`**: Timestamp indicating the last time the user information was updated.
+  - **`createdAt`**: Timestamp indicating when the user was created.
+  - **`updatedAt`**: Timestamp indicating the last time the user information was updated.
 
 ### Notes
 

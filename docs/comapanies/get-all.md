@@ -40,7 +40,7 @@ query GetAllCompanies($page: Int = 1, $limit: Int = 10) {
       industry
       website
       location
-      stage_templates {
+      stageTemplates {
         name
         description
       }
@@ -67,7 +67,7 @@ query GetAllCompanies($page: Int = 1, $limit: Int = 10) {
           "industry": "Technology",
           "website": "https://techinnovators.com",
           "location": "New York, NY",
-          "stage_templates": [
+          "stageTemplates": [
             {
               "name": "Initial Screening",
               "description": "First stage of the hiring process"
@@ -98,7 +98,7 @@ query GetAllCompanies($page: Int = 1, $limit: Int = 10) {
   - **`industry`**: Industry sector of the company.
   - **`website`**: Company's website URL.
   - **`location`** _(optional)_: Location of the company.
-  - **`stage_templates`**: Array of stage templates for recruitment.
+  - **`stageTemplates`**: Array of stage templates for recruitment.
     - **`name`**: Name of the stage.
     - **`description`**: Description of the stage.
 

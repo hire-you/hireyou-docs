@@ -26,13 +26,8 @@ To create a new company, you need to provide the following details:
 ### Optional Fields
 
 - **location**: The physical location of the company.
-- **employers**: A list of employers associated with the company. Each employer includes fields:
-  - **name**: Employer's name.
-  - **email**: Employer's email address.
-  - **role**: Employer's role in the company.
-  - **phone**: Employer's phone number.
 
-- **stage_templates**: A list of recruitment stages associated with the company. Each stage includes:
+- **stageTemplates**: A list of recruitment stages associated with the company. Each stage includes:
   - **name**: Stage name.
   - **description**: Description of the stage.
 
@@ -48,7 +43,7 @@ mutation CreateCompany($input: CreateCompanyInput!) {
     industry
     website
     location
-    stage_templates {
+    stageTemplates {
       name
       description
     }
@@ -65,7 +60,7 @@ mutation CreateCompany($input: CreateCompanyInput!) {
     "industry": "Technology",
     "website": "https://techinnovators.com",
     "location": "New York, NY",
-    "stage_templates": [
+    "stageTemplates": [
       {
         "name": "Initial Screening",
         "description": "First stage of the hiring process"
@@ -86,7 +81,7 @@ mutation CreateCompany($input: CreateCompanyInput!) {
       "industry": "Technology",
       "website": "https://techinnovators.com",
       "location": "New York, NY",
-      "stage_templates": [
+      "stageTemplates": [
         {
           "name": "Initial Screening",
           "description": "First stage of the hiring process"
@@ -108,7 +103,7 @@ mutation CreateCompany($input: CreateCompanyInput!) {
 - **`industry`**: Industry sector of the company.
 - **`website`**: Company's website URL.
 - **`location`** _(optional)_: Location of the company.
-- **`stage_templates`**: Array of recruitment stages.
+- **`stageTemplates`**: Array of recruitment stages.
   - **`name`**: Name of the recruitment stage.
   - **`description`**: Description of the recruitment stage.
 

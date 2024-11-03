@@ -40,12 +40,12 @@ query GetAllJobs($page: Int = 1, $limit: Int = 10) {
       title
       status
       description
-      contract_type
-      employment_type
+      contractType
+      employmentType
       tags {
         name
         type
-        proficiency_level
+        proficiencyLevel
       }
       stages {
         name
@@ -77,13 +77,13 @@ query GetAllJobs($page: Int = 1, $limit: Int = 10) {
           "title": "Software Engineer",
           "status": "IN_PROGRESS",
           "description": "We are looking for a talented software engineer...",
-          "contract_type": "Full-time",
-          "employment_type": "REMOTE",
+          "contractType": "Full-time",
+          "employmentType": "REMOTE",
           "tags": [
             {
               "name": "JavaScript",
               "type": "SKILL",
-              "proficiency_level": 4
+              "proficiencyLevel": 4
             }
           ],
           "stages": [
@@ -119,13 +119,13 @@ query GetAllJobs($page: Int = 1, $limit: Int = 10) {
   - **`company`**: Unique identifier of the company associated with the job.
   - **`title`**: Title of the job.
   - **`status`**: Current status of the job (e.g., `IN_PROGRESS` or `FINISHED`).
-  - **`contract_type`**: Type of contract (e.g., `Full-time`, `Part-time`).
+  - **`contractType`**: Type of contract (e.g., `Full-time`, `Part-time`).
   - **`description`**: Description of the job.
-  - **`employment_type`**: Type of employment (e.g., `ONSITE`, `REMOTE`, `HYBRID`).
+  - **`employmentType`**: Type of employment (e.g., `ONSITE`, `REMOTE`, `HYBRID`).
   - **`tags`**: Array of job tags.
     - **`name`**: Name of the tag.
     - **`type`**: Type of the tag (`SKILL` or `POSITION`).
-    - **`proficiency_level`**: Proficiency level required for the tag.
+    - **`proficiencyLevel`**: Proficiency level required for the tag.
   - **`stages`**: Array of stages in the hiring process.
     - **`name`**: Name of the stage.
     - **`description`**: Description of the stage.

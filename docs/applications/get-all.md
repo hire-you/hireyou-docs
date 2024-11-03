@@ -37,7 +37,7 @@ query GetAllApplications($page: Int, $limit: Int) {
         name
         description
         order
-        assign_roles
+        assignRoles
         assignments
         feedback {
           aiFeedback
@@ -79,7 +79,7 @@ query GetAllApplications($page: Int, $limit: Int) {
               "name": "Initial Screening",
               "description": "First round of screening with HR",
               "order": 1,
-              "assign_roles": [
+              "assignRoles": [
                 "64a789f4e14d16bc9df98765"
               ],
               "assignments": [
@@ -113,7 +113,7 @@ query GetAllApplications($page: Int, $limit: Int) {
     - **`name`**: Name of the application stage.
     - **`description`**: Description of the application stage.
     - **`order`**: Order of the application stage in the process.
-    - **`assign_roles`**: Array of IDs representing assigned recruiters/interviewers.
+    - **`assignRoles`**: Array of IDs representing assigned recruiters/interviewers.
     - **`assignments`**: Array of IDs representing tasks or assignments.
     - **`feedback`**: Feedback provided at each stage.
       - **`aiFeedback`**: Feedback provided by AI.

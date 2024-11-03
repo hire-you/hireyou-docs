@@ -23,15 +23,15 @@ To create a new job, you need to provide the following details:
 - **title**: The title of the job.
 - **description**: The description of the job.
 - **status**: The status of the job (`IN_PROGRESS` or `FINISHED`).
-- **contract_type**: The type of job contract (e.g., `Full-time`, `Part-time`).
-- **employment_type**: The type of employment (`ONSITE`, `REMOTE`, `HYBRID`).
+- **contractType**: The type of job contract (e.g., `Full-time`, `Part-time`).
+- **employmentType**: The type of employment (`ONSITE`, `REMOTE`, `HYBRID`).
 
 ### Optional Fields
 
 - **tags**: A list of tags associated with the job. Each tag includes:
   - **name**: The name of the tag.
   - **type**: The type of the tag (`SKILL` or `POSITION`).
-  - **proficiency_level**: The proficiency level required for the tag.
+  - **proficiencyLevel**: The proficiency level required for the tag.
 
 - **stages**: A list of recruitment stages associated with the job. Each stage includes:
   - **name**: The name of the stage.
@@ -50,12 +50,12 @@ mutation CreateJob($input: CreateJobInput!) {
     title
     status
     description
-    contract_type
-    employment_type
+    contractType
+    employmentType
     tags {
       name
       type
-      proficiency_level
+      proficiencyLevel
     }
     stages {
       name
@@ -76,14 +76,14 @@ mutation CreateJob($input: CreateJobInput!) {
     "company": "64a456f4e14d16bc9df12345",
     "title": "Software Engineer",
     "status": "IN_PROGRESS",
-    "contract_type": "Full-time",
+    "contractType": "Full-time",
     "description": "We are looking for a talented software engineer...",
-    "employment_type": "REMOTE",
+    "employmentType": "REMOTE",
     "tags": [
       {
         "name": "JavaScript",
         "type": "SKILL",
-        "proficiency_level": 4
+        "proficiencyLevel": 4
       }
     ],
     "stages": [
@@ -107,14 +107,14 @@ mutation CreateJob($input: CreateJobInput!) {
       "company": "64a456f4e14d16bc9df12345",
       "title": "Software Engineer",
       "status": "IN_PROGRESS",
-      "contract_type": "Full-time",
-      "employment_type": "REMOTE",
+      "contractType": "Full-time",
+      "employmentType": "REMOTE",
       "description": "We are looking for a talented software engineer...",
       "tags": [
         {
           "name": "JavaScript",
           "type": "SKILL",
-          "proficiency_level": 4
+          "proficiencyLevel": 4
         }
       ],
       "stages": [
@@ -142,12 +142,12 @@ mutation CreateJob($input: CreateJobInput!) {
 - **`title`**: Title of the job.
 - **`status`**: Status of the job (`IN_PROGRESS` or `FINISHED`).
 - **`description`**: Description of the job.
-- **`contract_type`**: Type of contract (e.g., `Full-time`, `Part-time`).
-- **`employment_type`**: Type of employment (`ONSITE`, `REMOTE`, `HYBRID`).
+- **`contractType`**: Type of contract (e.g., `Full-time`, `Part-time`).
+- **`employmentType`**: Type of employment (`ONSITE`, `REMOTE`, `HYBRID`).
 - **`tags`**: Array of job tags.
   - **`name`**: Name of the tag.
   - **`type`**: Type of the tag (`SKILL` or `POSITION`).
-  - **`proficiency_level`**: Proficiency level required for the tag.
+  - **`proficiencyLevel`**: Proficiency level required for the tag.
 - **`stages`**: Array of recruitment stages.
   - **`name`**: Name of the recruitment stage.
   - **`description`**: Description of the recruitment stage.
