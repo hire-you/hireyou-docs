@@ -39,6 +39,7 @@ query GetAllJobs($page: Int = 1, $limit: Int = 10) {
       company
       title
       status
+      description
       contract_type
       employment_type
       tags {
@@ -75,6 +76,7 @@ query GetAllJobs($page: Int = 1, $limit: Int = 10) {
           "company": "64a456f4e14d16bc9df12345",
           "title": "Software Engineer",
           "status": "IN_PROGRESS",
+          "description": "We are looking for a talented software engineer...",
           "contract_type": "Full-time",
           "employment_type": "REMOTE",
           "tags": [
@@ -118,6 +120,7 @@ query GetAllJobs($page: Int = 1, $limit: Int = 10) {
   - **`title`**: Title of the job.
   - **`status`**: Current status of the job (e.g., `IN_PROGRESS` or `FINISHED`).
   - **`contract_type`**: Type of contract (e.g., `Full-time`, `Part-time`).
+  - **`description`**: Description of the job.
   - **`employment_type`**: Type of employment (e.g., `ONSITE`, `REMOTE`, `HYBRID`).
   - **`tags`**: Array of job tags.
     - **`name`**: Name of the tag.
