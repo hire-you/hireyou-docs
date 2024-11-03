@@ -48,12 +48,6 @@ mutation CreateCompany($input: CreateCompanyInput!) {
     industry
     website
     location
-    employers {
-      name
-      email
-      role
-      phone
-    }
     stage_templates {
       name
       description
@@ -71,14 +65,6 @@ mutation CreateCompany($input: CreateCompanyInput!) {
     "industry": "Technology",
     "website": "https://techinnovators.com",
     "location": "New York, NY",
-    "employers": [
-      {
-        "name": "Alice Johnson",
-        "email": "alice@techinnovators.com",
-        "role": "CTO",
-        "phone": "123-456-7890"
-      }
-    ],
     "stage_templates": [
       {
         "name": "Initial Screening",
@@ -100,14 +86,6 @@ mutation CreateCompany($input: CreateCompanyInput!) {
       "industry": "Technology",
       "website": "https://techinnovators.com",
       "location": "New York, NY",
-      "employers": [
-        {
-          "name": "Alice Johnson",
-          "email": "alice@techinnovators.com",
-          "role": "CTO",
-          "phone": "123-456-7890"
-        }
-      ],
       "stage_templates": [
         {
           "name": "Initial Screening",
@@ -130,11 +108,6 @@ mutation CreateCompany($input: CreateCompanyInput!) {
 - **`industry`**: Industry sector of the company.
 - **`website`**: Company's website URL.
 - **`location`** _(optional)_: Location of the company.
-- **`employers`**: Array of employers within the company.
-  - **`name`**: Name of the employer.
-  - **`email`**: Email address of the employer.
-  - **`role`**: Role of the employer in the company.
-  - **`phone`**: Phone number of the employer.
 - **`stage_templates`**: Array of recruitment stages.
   - **`name`**: Name of the recruitment stage.
   - **`description`**: Description of the recruitment stage.
